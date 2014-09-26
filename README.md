@@ -6,6 +6,8 @@ Titanium Alloy Widget to prompt users to rate an app
 ## Overview
 This is a widget for the [Appcelerator](http://www.appcelerator.com) [Alloy](http://projects.appcelerator.com/alloy/docs/Alloy-bootstrap/index.html) MVC framework to prompt a user if they want to rate an app.
 
+![Screenshot](/screenshot.png?raw=true)
+
 ## Features
 
 * Free to use and open source
