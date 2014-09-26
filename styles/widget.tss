@@ -1,0 +1,46 @@
+"TableView":{
+    top:'5%'
+},
+"TableViewRow" : {
+    height:40
+},
+".modalWin": {
+	backgroundColor: 'white',
+	navBarHidden:true,
+	tabBarHidden:true,
+	borderRadius:10,
+	height: '60%',
+	width: '80%',
+	zIndex: 0,
+},
+".modalView": {
+    top:'5%',
+	layout : 'vertical'
+},
+".verticalView": {
+    height: Ti.UI.SIZE,
+	layout : 'vertical'
+},
+"#appTitle":{
+    top:'1%',
+    font: {
+        fontWeight: 'bold',
+        fontSize: 18,
+        color:'black',
+    }
+
+},
+"#appBody":{
+    left:'5%',
+    right:'5%',
+    font: {
+        fontSize: 14,
+        color:'#eee',
+    }
+},
+".option":{
+    font: {
+        fontSize: 18
+    },
+    color:'blue'
+}

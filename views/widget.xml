@@ -1,0 +1,21 @@
+<Alloy>
+    <Window id="ratingWin" class="modalWin" navBarHidden="true" modal="true">
+        <View id="ratingView" class="modalView">
+            <View class="verticalView">
+                <Label id="appTitle" />
+                <Label id="appBody" />
+            </View>
+            <TableView id="ratingTableView">
+                <TableViewRow>
+                    <Label id="rateLbl" class="option" text="Rate it" action="rate" />
+                </TableViewRow>
+                <TableViewRow>
+                    <Label class="option" text="Remind me later" action="remind" />
+                </TableViewRow>
+                <TableViewRow>
+                    <Label class="option" text="No, Thanks" action="bummer"/>
+                </TableViewRow>
+            </TableView>
+        </View>
+    </Window>
+</Alloy>
