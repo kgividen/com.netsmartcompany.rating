@@ -20,7 +20,7 @@ This is a widget for the [Appcelerator](http://www.appcelerator.com) [Alloy](htt
 <Widget id="rating" src="com.netsmartcompany.rating"/>
 ```
 
-* Initialize it in your controller
+Initialize it in your controller
 ```js
 var appId = "APPID",   //App ID for itunes or GooglePlay
     appName = "CoolApp", //Name of you APP for the Title
@@ -31,12 +31,15 @@ var appId = "APPID",   //App ID for itunes or GooglePlay
 $.rating.init(appId, appName, appMsg, runEvery, appDebug);
 ```
 
-* Run it in your controller 
+Run it in your controller 
 ```js
 $.rating.run();
 ```
 
-* Clear it out so it prompts them again
+Clear it out so it prompts them again
 ```js
 $.rating.clear();
 ```
+
+## Example
+See an example usage here: https://github.com/kgividen/AlloySpike
