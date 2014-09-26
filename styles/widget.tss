@@ -26,17 +26,17 @@
     font: {
         fontWeight: 'bold',
         fontSize: 18,
-        color:'black',
-    }
-
+    },
+    color:'black'
 },
 "#appBody":{
     left:'5%',
     right:'5%',
     font: {
         fontSize: 14,
-        color:'#eee',
-    }
+    },
+    color:'black'
+
 },
 ".option":{
     font: {

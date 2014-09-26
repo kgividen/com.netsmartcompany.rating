@@ -20,12 +20,18 @@ $.run = function(){
     var timesRun = Ti.App.Properties.getInt('com.netsmartcompany.timesRun' + APP_ID);
     var hasRated = Titanium.App.Properties.getBool('com.netsmartcompany.hasRated.' + APP_ID);
     $.rateLbl.text = "Rate " + APP_NAME;
+    Ti.API.info("timesRun: " + timesRun + " hasRated: " + hasRated + " debug: " + APP_DEBUG);
+
     //Set it to default of 0 if it's never been set before
     if(!typeof timesRun){
         Ti.App.Properties.setInt('com.netsmartcompany.timesRun' + APP_ID, 0);
     }
 
-    //Ti.API.info("timesRun: " + timesRun + " hasRated: " + hasRated + " debug: " + APP_DEBUG);
+    if(!typeof hasRated){
+        Ti.App.Properties.setInt('com.netsmartcompany.hasRated.' + APP_ID, false);
+    }
+
+    Ti.API.info("timesRun: " + timesRun + " hasRated: " + hasRated + " debug: " + APP_DEBUG);
     if(!hasRated || APP_DEBUG) {
         $.appTitle.text = APP_NAME;
         $.appBody.text = APP_TXT;
@@ -51,7 +57,8 @@ $.ratingView.addEventListener('click', function(e) {
     var action = e.source.action;
     if (action === "rate") {
         if (OS_NAME == 'ios') {
-            Ti.Platform.openURL('itms-apps://itunes.apple.com/app/id' + APP_ID);
+//            Ti.Platform.openURL('itms-apps://itunes.apple.com/app/id' + APP_ID);
+            Ti.Platform.openURL('itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?pageNumber=0&sortOrdering=1&type=Purple+Software&mt=8&id=' + APP_ID);
         } else {
             Ti.Platform.openURL('market://details?id=' + APP_ID);
         }
