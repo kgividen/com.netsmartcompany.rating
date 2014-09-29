@@ -24,7 +24,7 @@ This is a widget for the [Appcelerator](http://www.appcelerator.com) [Alloy](htt
 
 Initialize it in your controller
 ```js
-var appId = "APPID",   //App ID for itunes or GooglePlay
+var appId = "APPID",   //App ID for itunes or package_name for GooglePlay
     appName = "CoolApp", //Name of you APP for the Title
     appMsg = "If you enjoy using CoolApp, would you mind taking a moment to rate it?  Thanks!",//Message you want to display to the user to get them to rate it.
     runEvery = 3, //How many times can they run the app before being prompted to rate it.
