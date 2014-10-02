@@ -33,9 +33,16 @@ var appId = "APPID",   //App ID for itunes or package_name for GooglePlay
 $.rating.init(appId, appName, appMsg, runEvery, appDebug);
 ```
 
-Run it in your controller 
+Run it in your controller
 ```js
 $.rating.run();
+```
+
+Note: For android it's best to do this on the opening of the root window.
+```js
+$.win.addEventListener('open', function(e) {
+    $.rating.run();
+});
 ```
 
 Clear it out so it prompts them again

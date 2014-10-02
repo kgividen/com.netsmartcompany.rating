@@ -1,5 +1,5 @@
 <Alloy>
-    <Window id="ratingWin" class="modalWin" navBarHidden="true" modal="true">
+    <Window id="ratingWin" class="modalWin" navBarHidden="true">
         <View id="ratingView" class="modalView">
             <View class="verticalView">
                 <Label id="appTitle" />
